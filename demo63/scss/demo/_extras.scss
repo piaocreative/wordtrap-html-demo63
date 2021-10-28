@@ -1,0 +1,70 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.arrows {
+	a {
+		font-size: 2.25rem;
+		color: #c7c7c7;
+
+		&:hover {
+			color: $dark;
+		}
+	}
+}
+
+.new-books {
+	padding: 1.875rem 3rem;
+	background-color: #f9f9f9;
+	position: relative;
+	border-radius: 0.1875rem;
+
+	.books-thumbnails {
+		position: absolute;
+		bottom: 0;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.download {
+	position: relative;
+	padding: 3rem 7rem;
+	background-color: #f9f9f9;
+	border-radius: 0.1875rem;
+
+	h2 {
+		font-size: 3.125rem;
+	}
+
+	p {
+		color: #797979;
+	}
+
+	.iphone-thumbnail {
+		position: absolute;
+		bottom: 0;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 3rem 1.5rem;
+
+		.iphone-thumbnail {
+			left: 0;
+		}
+	}
+}
+
+.slick-slide {
+	margin: 1rem;
+	height: auto;
+}

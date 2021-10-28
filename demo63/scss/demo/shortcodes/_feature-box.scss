@@ -1,0 +1,30 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: feature-box.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Featured Boxes
+-----------------------------------------------------------------*/
+
+.fbox {	
+	flex: 1;
+	position: relative;
+	margin-bottom: 1.875rem;
+
+	&:not(.border-0) {
+		&:after {
+			@include media-breakpoint-up(lg) {
+				content: "";
+				position: absolute;
+				right: -7rem;
+				display: inline-block;
+				width: 1px;
+				height: 3rem;
+				background-color: #d9d9d9;
+			}
+		}
+	}
+}
